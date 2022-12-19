@@ -433,7 +433,9 @@ function CGame(oData) {
     _iLives = currentLife;
     _bLevelInProgress = true;
     _oInterface.refreshLives(_iLives);
-    this._generateNewFrog();
+    if (_iFrogInNest < 5) {
+      this._generateNewFrog();
+    }
     if(_oFly){
         _oFly.unload();
     }
