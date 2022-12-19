@@ -452,7 +452,7 @@ function CGame(oData) {
     _oInterface.refreshLives(_iLives);
     if (_iLives === 0) {
       _bLevelInProgress = false;
-      createjs.Tween.removeAllTweens();
+       _oInterface.stopBar();
       setTimeout(() => {
         const clickConfirm = ()=>{
             const allInput =  document.querySelectorAll("#form-add-life input")
