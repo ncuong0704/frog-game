@@ -22,7 +22,7 @@ var countLife = 1;
 // biến win để bk người chơi đã thắng r
 var win = false;
 // scrowwin là số điểm để chiến thắng
-var scoreWin = 100;
+var scoreWin = 500;
 // là mạng hiện tại của người chơi khi chiến thắng
 var currentLife;
 // số mạng dc hồi sinh khi điền form
