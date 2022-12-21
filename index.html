@@ -3,6 +3,7 @@
  <head> 
   <title></title> 
   <link rel="stylesheet" href="css/reset.css" type="text/css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" href="css/main.css" type="text/css"> 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui"> 
@@ -192,12 +193,13 @@
     </form>
    <!--Form enter info add life --- end  -->
    <!-- popup voucher code --start -->
-    <div class="popop-voucher">
+    <div class="popop-voucher active">
         <h3 class="popop-voucher__heading">
             Chúc mừng bạn đã nhận được mã giảm giá 30%
         </h3>
         <p class="popop-voucher__code">
-            <span>0231356545</span>
+            <input disabled type="text" value="0231356545">
+            <i title="copy" class="fa-regular fa-copy popop-voucher__copy"></i>
         </p>
         <p class="popop-voucher__description">Lưu ý: copy mã code hoặc chụp màn hình</p>
         <div class="popop-voucher__action">
