@@ -97,6 +97,11 @@ canvas {
     transition: all linear 0.3s;
     width: 460px;
 }
+@media (max-width: 739px) {
+    .form-add-life{
+        width: calc(100% - 70px);
+    }
+}
 .form-add-life.active{
     opacity: 1;
     visibility: visible;
@@ -206,6 +211,11 @@ canvas {
     width: 460px;
     visibility: hidden;
     transition: all ease 0.3s;
+}
+@media (max-width: 739px) {
+    .popop-voucher{
+        width: calc(100% - 70px);
+    }
 }
 .popop-voucher.active{
     opacity: 1;
