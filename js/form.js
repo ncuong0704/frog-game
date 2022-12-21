@@ -3,6 +3,7 @@ const cancelBtn = document.querySelector("#form-add-life__cancel")
 const confirmBtn = document.querySelector("#form-add-life__confirm")
 const popupVoucher = document.querySelector(".popop-voucher")
 const btnPlayContinue = document.querySelector(".popop-voucher__btn--continue")
+const btnCopyCode = document.querySelector(".popop-voucher__copy")
 function openForm(){
     mainForm.classList.add("active")
 }
@@ -17,6 +18,20 @@ function openPopupVoucher(){
 function closePopupVoucher(){
     popupVoucher.classList.remove("active")
 }
+
+btnCopyCode.addEventListener("click", function(){
+    console.log(btnCopyCode.parentElement.querySelector("input"));
+    var copyText = btnCopyCode.parentElement.querySelector("input");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+})
+
 // countLife lớn hơn 2 thì popup form sẽ k hiện lên nữa
 var countLife = 1;
 // biến win để bk người chơi đã thắng r
