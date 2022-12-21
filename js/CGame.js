@@ -452,7 +452,7 @@ function CGame(oData) {
     _oInterface.refreshLives(_iLives);
     if (_iLives === 0) {
       _bLevelInProgress = false;
-       _oInterface.stopBar();
+      _oInterface.stopBar();
       setTimeout(() => {
         const clickConfirm = ()=>{
             const allInput =  document.querySelectorAll("#form-add-life input")
@@ -513,7 +513,7 @@ function CGame(oData) {
             this.gameOver();
         }
         
-      }, 1000);
+      }, 1000); 
      
     }
   };
@@ -533,7 +533,7 @@ function CGame(oData) {
   };
 
   this.reset = function () {
-    console.log("reset", 1995);
+    // console.log("reset", 1995);
 
     for (var i = 0; i < _aCar.length; i++) {
       _aCar[i].unload();
